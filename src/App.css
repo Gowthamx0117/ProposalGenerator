@@ -1,0 +1,90 @@
+/* General app styles */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Logo styles */
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+  margin-bottom: 20px;
+  animation: App-logo-bounce infinite 3s ease-in-out; /* Smooth bounce animation */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear; /* Rotation for logo */
+  }
+}
+
+/* Header styles */
+.App-header {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border-radius: 15px;
+  padding: 20px 40px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  margin: auto;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in effect for header */
+}
+
+/* Link styles */
+.App-link {
+  color: #61dafb;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  background: #61dafb;
+  color: #282c34;
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for logo animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Bounce effect */
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
